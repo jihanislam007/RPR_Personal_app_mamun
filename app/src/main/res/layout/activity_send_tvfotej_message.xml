@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_send_tvfotej_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".80"
+            android:background="@drawable/topbutton"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.20">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/NameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ractangle_dark_border"
+                            android:hint=" আপনার নাম লিখুন "
+                            android:inputType="textPersonName"
+                            android:textAlignment="center" />
+
+                        <EditText
+                            android:id="@+id/MobilEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_below="@+id/NameEditText"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ractangle_dark_border"
+                            android:hint="মোবাইল নম্বর লিখুন "
+                            android:inputType="phone"
+                            android:textAlignment="center" />
+
+                        <EditText
+                            android:id="@+id/EmailEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_below="@+id/MobilEditText"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ractangle_dark_border"
+                            android:hint="ফুটেজ কোন ইমেইল এ পাঠাব সেটি লিখুন "
+                            android:inputType="textEmailAddress"
+                            android:textAlignment="center" />
+
+                        <EditText
+                            android:id="@+id/DateEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_below="@+id/EmailEditText"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ractangle_dark_border"
+                            android:hint="তারিখ "
+                            android:inputType="textPersonName"
+                            android:textAlignment="center" />
+
+                        <EditText
+                            android:id="@+id/SubjectEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_below="@+id/DateEditText"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ractangle_dark_border"
+                            android:hint="বিষয় লিখুন"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center" />
+
+                        <EditText
+                            android:id="@+id/OvijugEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_below="@+id/SubjectEditText"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ractangle_dark_border"
+                            android:hint=" টিভির নাম, অনুষ্ঠানের তারিখ,\nকোন অনুষ্ঠানের ফুটেজ,\nসংশ্লিষ্ট শিল্পী/সংবাদ পাঠক বা \nউক্ত অনুষ্ঠানের প্রধান অতিথি কে - তা লিখুন"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/sendButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_below="@+id/OvijugEditText"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/send_button"
+                            android:text="পাঠিয়ে দিন"
+                            android:textSize="24sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#FDFACD"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".80"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pr"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextClock
+                        android:id="@+id/textClock"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.20"
+                android:background="@drawable/bottombutton"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
